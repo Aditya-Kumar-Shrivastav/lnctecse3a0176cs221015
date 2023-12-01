@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: large;
+    border-radius: 5px;
+  }
+    span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+    .modal {
+
+        display: none;
+        overflow: auto;
+        position: fixed; /* Stay in place */
+        margin-top: auto;
+
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%;
+        background-color: rgb(160, 196, 88)
+        padding-top: 60px;
+
+        }
+        .modal-content {
+  background-color: #ee3f3f;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+    height: 70%;
+    font-size: 25px;
+    padding: 20px;
+    color: #000000;
+    border-radius: 25px;
+        }
+        .close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+        .container {
+            margin: auto;
+            padding: 16px;
+            text-decoration: underline;
+            font-family: ;
+        }
+    body{
+        background-image: url("https://img.freepik.com/free-photo/edge-yellow-wall-pencils-paper-rat-clips-clocks-lie-chaotically-beautifully_197531-12536.jpg?w=996&t=st=1701453910~exp=1701454510~hmac=6afcb16110eed651000bc32ee3041a557c69d8f7d36b0ead7f164baff65a944b");
+        background-repeat: no-repeat;
+        
+        background-size: cover;
+        height: 100%;
+    }
+    .container-checkbox
+    {
+        font-size: medium;
+    }
+    .button {
+  
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 15px;
+}
+.button1 {
+  background-color: rgb(255, 200, 0); 
+  color: black; 
+  border: 2px solid rgb(216, 23, 9);
+}
+.button1:hover {
+  background-color: #d31717;
+  color: white;
+}
+
+.button2 {
+  background-color: white; 
+  color: rgb(0, 0, 0); 
+  border: 2px solid rgb(0, 0, 0);
+  
+  margin-left: 39%;
+}
+
+.button2:hover {
+  background-color: #16eaea;
+  color: white;
+}
+
+</style>
+<body>
+    <H1>Hola Amigos(Hello Friends)</H1>
+    <button class="button button1" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+    <div id="id01" class="modal">
+    <form class="modal-content">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <div class="container">
+            <label for="uname"><b>Username</b></label><br><br>
+            <input type="text" placeholder="Enter Username" name="uname"><br><br>
+      
+            <label for="psw"><b>Password</b></label><br><br>
+            <input type="password" placeholder="Enter Password" name="psw"><br><br>
+        
+            <div class="container-checkbox">
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+                </div><br>
+            <a href="hahhahhash.html">
+            <button class="button button2" type="button">Login</button></a><br>
+            
+          </div>
+          <p>Don't have an account you can create one.<a href="signup.html"> Sign up!</a></p><br>
+            
+        </div>
+    </form>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>
+</body>
+</html>
